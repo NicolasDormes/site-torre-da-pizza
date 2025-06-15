@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Pizza Express</title>
+    <link rel="stylesheet" href="style/test.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="home.html" class="logo-link">
+                <img src="Fotos/logo.png" alt="Pizza Express Logo">
+            </a>
+            <div class="header-info">
+                <p><i class="fas fa-phone"></i>(19)3534-4591</p>
+                <p><i class="fas fa-clock"></i> Aberto das 18h às 23h</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="home.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <a href="cardapio.html" class="quick-order-btn">Fazer Pedido</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>Nosso Cardápio</h1>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="todas">Todas</button>
+            <button class="category-btn" data-category="tradicionais">Tradicionais</button>
+            <button class="category-btn" data-category="especiais">Especiais</button>
+            <button class="category-btn" data-category="doces">Doces</button>
+            <button class="category-btn" data-category="acompanhamentos">Acompanhamentos</button>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>Seu Carrinho</h3>
+                <button class="clear-cart-btn">Limpar</button>
+            </div>
+            <div class="cart-items">
+                <!-- Items do carrinho serão adicionados aqui via JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-value">R$ 0,00</span>
+                </div>
+                <button class="checkout-btn">Finalizar Pedido</button>
+            </div>
+        </div>
+
+        <section class="menu-section">
+            <h2 class="menu-section-title">Pizzas Tradicionais</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="tradicionais">
+                    <img src="Fotos/mozzarela.jpg" alt="Margherita">
+                    <div class="menu-item-content">
+                        <h3>Margherita</h3>
+                        <p>Molho de tomate, mussarela, tomate e manjericão</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetariana</span>
+                        </div>
+                        <p class="menu-item-price">R$ 45,90</p>
+                        <button class="add-to-cart-btn" data-name="Margherita" data-price="45.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tradicionais">
+                    <img src="Fotos/2-queijos.jpg" alt="Quatro Queijos">
+                    <div class="menu-item-content">
+                        <h3>Quatro Queijos</h3>
+                        <p>Mussarela, parmesão, gorgonzola e catupiry</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetariana</span>
+                        </div>
+                        <p class="menu-item-price">R$ 52,90</p>
+                        <button class="add-to-cart-btn" data-name="Quatro Queijos" data-price="52.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tradicionais">
+                    <img src="Fotos/mozzarela-ao-alho.jpg" alt="Calabresa">
+                    <div class="menu-item-content">
+                        <h3>Calabresa</h3>
+                        <p>Molho de tomate, mussarela e calabresa</p>
+                        <p class="menu-item-price">R$ 48,90</p>
+                        <button class="add-to-cart-btn" data-name="Calabresa" data-price="48.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="menu-section-title">Pizzas Especiais</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="especiais">
+                    <img src="Fotos/frango-com-requeijao.jpg" alt="Frango com Catupiry">
+                    <div class="menu-item-content">
+                        <h3>Frango com Catupiry</h3>
+                        <p>Molho de tomate, mussarela, frango desfiado e catupiry</p>
+                        <p class="menu-item-price">R$ 54,90</p>
+                        <button class="add-to-cart-btn" data-name="Frango com Catupiry" data-price="54.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="especiais">
+                    <img src="Fotos/Pizza-Portuguesa.jpg" alt="Portuguesa">
+                    <div class="menu-item-content">
+                        <h3>Portuguesa</h3>
+                        <p>Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas</p>
+                        <p class="menu-item-price">R$ 51,90</p>
+                        <button class="add-to-cart-btn" data-name="Portuguesa" data-price="51.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="especiais">
+                    <img src="Fotos/pepperoni.jfif" alt="Pepperoni">
+                    <div class="menu-item-content">
+                        <h3>Pepperoni</h3>
+                        <p>Molho de tomate, mussarela e pepperoni</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Picante</span>
+                        </div>
+                        <p class="menu-item-price">R$ 56,90</p>
+                        <button class="add-to-cart-btn" data-name="Pepperoni" data-price="56.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="menu-section-title">Pizzas Doces</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="doces">
+                    <img src="Fotos/pizza_morango_com_chocolate.jpg" alt="Chocolate com Morango">
+                    <div class="menu-item-content">
+                        <h3>Chocolate com Morango</h3>
+                        <p>Chocolate ao leite, morangos frescos e chantilly</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Doce</span>
+                        </div>
+                        <p class="menu-item-price">R$ 49,90</p>
+                        <button class="add-to-cart-btn" data-name="Chocolate com Morango" data-price="49.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="doces">
+                    <img src="Fotos/banana-canela.jpg" alt="Banana com Canela">
+                    <div class="menu-item-content">
+                        <h3>Banana com Canela</h3>
+                        <p>Banana caramelizada, canela e chocolate ao leite</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Doce</span>
+                        </div>
+                        <p class="menu-item-price">R$ 47,90</p>
+                        <button class="add-to-cart-btn" data-name="Banana com Canela" data-price="47.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="doces">
+                    <img src="Fotos/romeu-e-julieta-.jpg" alt="Romeu e Julieta">
+                    <div class="menu-item-content">
+                        <h3>Romeu e Julieta</h3>
+                        <p>Goiabada cremosa e queijo minas</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Doce</span>
+                        </div>
+                        <p class="menu-item-price">R$ 48,90</p>
+                        <button class="add-to-cart-btn" data-name="Romeu e Julieta" data-price="48.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="menu-section-title">Acompanhamentos</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/refi 2l.jfif" alt="Refrigerante">
+                    <div class="menu-item-content">
+                        <h3>Refrigerante 2L</h3>
+                        <p>Coca-Cola, Guaraná, Fanta, Sprite</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                        </div>
+                        <p class="menu-item-price">R$ 12,90</p>
+                        <button class="add-to-cart-btn" data-name="Refrigerante 2L" data-price="12.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/cerveja.jfif" alt="Cerveja">
+                    <div class="menu-item-content">
+                        <h3>Cerveja 350ml</h3>
+                        <p>Brahma, Skol, Antarctica, Stella Artois</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                            <span class="menu-tag">Alcoólico</span>
+                        </div>
+                        <p class="menu-item-price">R$ 8,90</p>
+                        <button class="add-to-cart-btn" data-name="Cerveja 350ml" data-price="8.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/vinho.jpg" alt="Vinho">
+                    <div class="menu-item-content">
+                        <h3>Vinho Tinto 750ml</h3>
+                        <p>Vinho tinto seco, suave ou semi-seco</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                            <span class="menu-tag">Alcoólico</span>
+                        </div>
+                        <p class="menu-item-price">R$ 89,90</p>
+                        <button class="add-to-cart-btn" data-name="Vinho Tinto 750ml" data-price="89.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/agua.png" alt="Água">
+                    <div class="menu-item-content">
+                        <h3>Água Mineral 500ml</h3>
+                        <p>Água mineral com ou sem gás</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                        </div>
+                        <p class="menu-item-price">R$ 4,90</p>
+                        <button class="add-to-cart-btn" data-name="Água Mineral 500ml" data-price="4.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/suco.jpg" alt="Suco">
+                    <div class="menu-item-content">
+                        <h3>Suco Natural 500ml</h3>
+                        <p>Laranja, Limão, Maracujá, Abacaxi</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                        </div>
+                        <p class="menu-item-price">R$ 9,90</p>
+                        <button class="add-to-cart-btn" data-name="Suco Natural 500ml" data-price="9.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="acompanhamentos">
+                    <img src="Fotos/Energeticos.jpg" alt="Energético">
+                    <div class="menu-item-content">
+                        <h3>Energético 250ml</h3>
+                        <p>Red Bull, Monster, Fusion</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida</span>
+                        </div>
+                        <p class="menu-item-price">R$ 14,90</p>
+                        <button class="add-to-cart-btn" data-name="Energético 250ml" data-price="14.90">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <h2>Fale Conosco</h2>
+        <p>Email: contato@torrepizzaexprees.com.br</p>
+        <p>Telefone: (19)3534-4591</p>
+        Develop by Nicolas
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+            const menuSections = document.querySelectorAll('.menu-section');
+            const cartItems = document.querySelector('.cart-items');
+            const totalValue = document.querySelector('.total-value');
+            const clearCartBtn = document.querySelector('.clear-cart-btn');
+            const checkoutBtn = document.querySelector('.checkout-btn');
+            let cart = [];
+
+            // Função para atualizar o carrinho
+            function updateCart() {
+                cartItems.innerHTML = '';
+                let total = 0;
+
+                cart.forEach((item, index) => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'cart-item';
+                    itemElement.innerHTML = `
+                        <span class="item-name">${item.name}</span>
+                        <span class="item-price">R$ ${item.price.toFixed(2)}</span>
+                        <button class="remove-item-btn" data-index="${index}">×</button>
+                    `;
+                    cartItems.appendChild(itemElement);
+                    total += item.price;
+                });
+
+                totalValue.textContent = `R$ ${total.toFixed(2)}`;
+            }
+
+            // Adicionar ao carrinho
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    
+                    cart.push({ name, price });
+                    updateCart();
+
+                    // Animação de feedback
+                    this.textContent = 'Adicionado!';
+                    this.classList.add('added');
+                    setTimeout(() => {
+                        this.textContent = 'Adicionar ao Carrinho';
+                        this.classList.remove('added');
+                    }, 1000);
+                });
+            });
+
+            // Remover item do carrinho
+            cartItems.addEventListener('click', function(e) {
+                if (e.target.classList.contains('remove-item-btn')) {
+                    const index = e.target.getAttribute('data-index');
+                    cart.splice(index, 1);
+                    updateCart();
+                }
+            });
+
+            // Limpar carrinho
+            clearCartBtn.addEventListener('click', function() {
+                cart = [];
+                updateCart();
+            });
+
+            // Finalizar pedido
+            checkoutBtn.addEventListener('click', function() {
+                if (cart.length === 0) {
+                    alert('Adicione itens ao carrinho primeiro!');
+                    return;
+                }
+                alert('Pedido finalizado! Total: ' + totalValue.textContent);
+                cart = [];
+                updateCart();
+            });
+
+            // Filtro de categorias
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const selectedCategory = this.getAttribute('data-category');
+
+                    menuSections.forEach(section => {
+                        const sectionTitle = section.querySelector('.menu-section-title');
+                        const sectionItems = section.querySelectorAll('.menu-item');
+                        let hasVisibleItems = false;
+
+                        sectionItems.forEach(item => {
+                            if (selectedCategory === 'todas') {
+                                item.style.display = 'block';
+                                hasVisibleItems = true;
+                            } else {
+                                if (item.getAttribute('data-category') === selectedCategory) {
+                                    item.style.display = 'block';
+                                    hasVisibleItems = true;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            }
+                        });
+
+                        if (sectionTitle) {
+                            sectionTitle.style.display = hasVisibleItems ? 'block' : 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

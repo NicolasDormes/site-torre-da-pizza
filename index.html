@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Express</title>
+    <link rel="stylesheet" href="style/test.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="Fotos/logo.png" alt="Pizza Express Logo">
+            </a>
+            <div class="header-info">
+                <p><i class="fas fa-phone"></i> (19)3534-4591
+                </p>
+                <p><i class="fas fa-clock"></i> Aberto das 18h às 23h</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <a href="cardapio.html" class="quick-order-btn">Fazer Pedido</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>A Melhor Pizza da Cidade!</h1>
+    </div>
+
+    <section class="map-section">
+        <h2>Nossa Localização</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7893!2d-47.5617!3d-22.4107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7d8f0c0c0c0c0%3A0x0!2sAv.%206%2C%20686%20-%20Centro%2C%20Rio%20Claro%20-%20SP%2C%2013500-430!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            <div class="map-info">
+                <h3>Pizza Express</h3>
+                <p>Av. 6, 686 - Centro</p>
+                <p>Rio Claro - SP, 13500-430</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+6,+686+-+Centro,+Rio+Claro+-+SP,+13500-430" target="_blank" class="directions-btn">Obter Direções</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="cardapio">
+        <h2>Favoritas de queijo</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
+            <div class="pizzas">
+                <div class="pizza-card">
+                    <img src="Fotos/mozzarela.jpg" alt="Pizza mozzarela">
+                    <h3>Pizza mozzarela</h3>
+                </div>
+                <div class="pizza-card">
+                    <img src="Fotos/2-queijos.jpg" alt="Pizza 2-queijos">
+                    <h3>Pizza 2-queijos</h3>
+                </div>
+                <div class="pizza-card">
+                    <img src="Fotos/mozzarela-ao-alho.jpg" alt="Pizza mozzarela ao alho">
+                    <h3>Pizza mozzarela ao alho</h3>
+                </div>
+                <div class="pizza-card">
+                    <img src="Fotos/mozzarela.jpg" alt="Pizza Margherita">
+                    <h3>Pizza Margherita</h3>
+                </div>
+                <div class="pizza-card">
+                    <img src="Fotos/2-queijos.jpg" alt="Pizza Quatro Queijos">
+                    <h3>Pizza Quatro Queijos</h3>
+                </div>
+                <div class="pizza-card">
+                    <img src="Fotos/mozzarela-ao-alho.jpg" alt="Pizza Calabresa">
+                    <h3>Pizza Calabresa</h3>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Por que nos escolher?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="feature-icon">🍕</i>
+                <h3>Ingredientes Frescos</h3>
+                <p>Utilizamos apenas ingredientes selecionados e frescos em nossas pizzas.</p>
+            </div>
+            <div class="feature-card">
+                <i class="feature-icon">⏱️</i>
+                <h3>Entrega Rápida</h3>
+                <p>Entregamos em até 30 minutos ou sua pizza é grátis!</p>
+            </div>
+            <div class="feature-card">
+                <i class="feature-icon">🔥</i>
+                <h3>Forno a Lenha</h3>
+                <p>Nossas pizzas são assadas em forno a lenha tradicional.</p>
+            </div>
+            <div class="feature-card">
+                <i class="feature-icon">⭐</i>
+                <h3>Qualidade Garantida</h3>
+                <p>Mais de 20 anos de experiência em pizzas artesanais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="promo-content">
+            <h2>Promoção da Semana!</h2>
+            <p class="promo-text">Compre 2 pizzas grandes e ganhe 1 refrigerante 2L</p>
+            <a href="cardapio.html" class="promo-btn">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Melhor pizza da cidade! A massa é perfeita e os ingredientes são sempre frescos."</p>
+                <p class="client-name">- Maria Silva</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Entrega super rápida e a pizza chega quentinha. Recomendo!"</p>
+                <p class="client-name">- João Santos</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Atendimento excelente e pizzas deliciosas. Já é minha pizzaria favorita!"</p>
+                <p class="client-name">- Ana Oliveira</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hours-section">
+        <div class="hours-container">
+            <h2>Horário de Funcionamento</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Segunda a Quinta</h3>
+                    <p>18h às 23h</p>
+                </div>
+                <div class="hours-card">
+                    <h3>Sexta e Sábado</h3>
+                    <p>18h às 00h</p>
+                </div>
+                <div class="hours-card">
+                    <h3>Domingo</h3>
+                    <p>18h às 22h</p>
+                </div>
+            </div>
+            <a href="contato.html" class="contact-btn">Fazer Pedido</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>Fale Conosco</h2>
+        <p>Email: contato@torrepizzaexprees.com.br</p>
+        <p>Telefone: (19) 3524-5678</p>
+        Develop by Nicolas
+    </footer>
+
+    <script>
+        let currentPosition = 0;
+        const cards = document.querySelectorAll('.pizza-card');
+        const cardWidth = 300; // Aumentei a largura para evitar corte
+        const cardsPerView = 3;
+        const totalCards = 6; // Definindo exatamente 6 pizzas
+
+        function moveCarousel(direction) {
+            currentPosition += direction * cardWidth;
+            
+            // Calcula a posição máxima
+            const maxPosition = -(totalCards - cardsPerView) * cardWidth;
+            
+            // Se passar do limite, volta ao início ou fim
+            if (currentPosition > 0) {
+                currentPosition = maxPosition;
+            } else if (currentPosition < maxPosition) {
+                currentPosition = 0;
+            }
+            
+            document.querySelector('.pizzas').style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        // Adiciona navegação automática a cada 5 segundos
+        setInterval(() => {
+            moveCarousel(1);
+        }, 5000);
+    </script>
+</body>
+</html> 
